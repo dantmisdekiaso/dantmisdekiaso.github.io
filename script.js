@@ -14,7 +14,7 @@ document.querySelectorAll(".card").forEach(card => {
                 playPauseBtn.style.display = "none"; // Ocultar el botón al reproducir
             } else {
                 video.pause();
-                playPauseBtn.innerHTML = "▶ Reproduceme Kiara"; // Cambiar el texto del botón
+                playPauseBtn.innerHTML = "▶ Reproduce el video Pedazito de Alfajor"; // Cambiar el texto del botón
             }
         });
 
