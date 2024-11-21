@@ -23,7 +23,7 @@ document.querySelectorAll(".card").forEach(card => {
             if (!video.paused) {
                 video.pause();
                 playPauseBtn.style.display = "block"; // Mostrar el botón al pausar
-                playPauseBtn.innerHTML = "▶ Reproduceme Kiara"; // Actualizar texto
+                playPauseBtn.innerHTML = "▶ Reproduce el video Pedazito de Alfajor"; // Actualizar texto
             } else {
                 pauseAllVideos(video); // Pausar todos los demás videos
                 video.play();
