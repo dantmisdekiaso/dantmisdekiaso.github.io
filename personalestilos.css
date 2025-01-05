@@ -21,7 +21,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 20rem;
+    height: 25rem;
     margin-bottom: .5rem;
 }
 .presentacion .avatar-perfil{
@@ -34,7 +34,7 @@ body{
     left: 4rem;
     border-radius: 50%;
     overflow: hidden;
-    border: 8px solid #ffffff;
+    border: 8px solid #ff0000;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
     
 }
@@ -56,7 +56,11 @@ body{
     margin-bottom: .5rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #000000;
+    color: #fcfcfc;
+    text-shadow: -3px -3px 0 #000, 
+    3px -3px 0 #000, 
+    -3px 3px 0 #000, 
+    3px 3px 0 #000;
 }
 ***
 .presentacion .menu-perfil ul {
@@ -151,3 +155,26 @@ video.video {
     height: 900px; /* Altura fija */
     object-fit: cover; /* Mantener proporciones */
 }
+
+
+
+    .card.fiesta {
+        background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+        background-size: 300% 300%;
+        animation: backgroundShift 2s infinite linear, glow 1s infinite alternate;
+    }
+
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #f0f, 0 0 40px #f0f;
+        }
+        to {
+            box-shadow: 0 0 15px #fff, 0 0 30px #ff0, 0 0 45px #f0f, 0 0 60px #f0f;
+        }
+    }
+
+    @keyframes backgroundShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
